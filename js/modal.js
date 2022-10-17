@@ -12,13 +12,13 @@ const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const modalCloseBtn = document.querySelector(".close");
 
-// launch modal event
+// Launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
-// close modal event
+// Close modal event
 modalCloseBtn.addEventListener('click', closeModal);
 
-// launch/close modal form
+// Functions
 function launchModal() {
   modalbg.style.display = "block";
 }
