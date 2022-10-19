@@ -34,30 +34,30 @@ function validate(event) {
 // Functions form inputs
 function validateFirstName() {
     if (firstNameInput.value.trim().match(regExpName)) {
-        console.log("no error");
+        firstNameInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     } else {
-        console.log("error");
+        firstNameInput.parentNode.setAttribute("data-error-visible", "true");
         return false;
     }
 }
 
 function validateLastName() {
     if (lastNameInput.value.trim().match(regExpName)) {
-        console.log("no error")
+        lastNameInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     } else {
-        console.log("error")
+        lastNameInput.parentNode.setAttribute("data-error-visible", "true");
         return false;
     }
 }
 
 function validateEmail() {
     if (emailInput.value.trim().match(regExpEmail)) {
-        console.log("no error");
+        emailInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     } else {
-        console.log("error")
+        emailInput.parentNode.setAttribute("data-error-visible", "true");
         return false;
     }
 }
@@ -66,20 +66,20 @@ function validateBirthdate() {
     let todayDate = Date.parse(new Date());
     let datePicked = Date.parse(birthdateInput.value);
     if(isNaN(datePicked) || datePicked > todayDate){
-        console.log("error");
+        birthdateInput.parentNode.setAttribute("data-error-visible", "true");
         return false;
     } else {
-        console.log("no error");
+        birthdateInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     }
 }
 
 function validateQuantity() {
     if (quantityInput.value > 0) {
-        console.log("no error");
+        quantityInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     } else {
-        console.log("error");
+        quantityInput.parentNode.setAttribute("data-error-visible", "true");
         return false;
     }
 }
@@ -87,29 +87,27 @@ function validateQuantity() {
 function validateLocation(){
     for (var i=0; i<locationInputs.length; i++) {
         if (locationInputs[i].checked) {
-            console.log("no error");
+            locationChoice.setAttribute("data-error-visible", "false");
             return true;
         }
     }
-    console.log("error");
+    locationChoice.setAttribute("data-error-visible", "true");
     return false;
 }
 
 function validateConditions() {
     if (conditionsInput.checked == true) {
-        console.log("no error");
+        conditionsInput.parentNode.setAttribute("data-error-visible", "false");
         return true;
     }
-    console.log("error");
+    conditionsInput.parentNode.setAttribute("data-error-visible", "true");
     return false;
 }
 
 function validateNews() {
     if (newsInput.checked == true) {
-        console.log("no error");
         return true;
     } else {
-        console.log("no error");
         return false;
     }
 }
