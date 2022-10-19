@@ -54,7 +54,8 @@
             <form id="form">
               <div
                 class="formData"
-              >
+                data-error-visible="false"
+                data-error="Entrez un minimum de 2 caractères.">
                 <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
@@ -64,7 +65,9 @@
                 /><br>
               </div>
               <div
-                class="formData">
+                class="formData"
+                data-error-visible="false"
+                data-error="Entrez un minimum de 2 caractères.">
                 <label for="last">Nom</label><br>
                 <input
                   class="text-control"
@@ -74,7 +77,9 @@
                 /><br>
               </div>
               <div
-                class="formData">
+                class="formData"
+                data-error-visible="false"
+                data-error="Entrez une adresse mail valide.">
                 <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
@@ -84,7 +89,9 @@
                 /><br>
               </div>
               <div
-                class="formData">
+                class="formData"
+                data-error-visible="false"
+                data-error="Entrez une date de naissance valide.">
                 <label for="birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
@@ -94,13 +101,17 @@
                 /><br>
               </div>
               <div
-                class="formData">
+                class="formData"
+                data-error-visible="false"
+                data-error="Choisissez une quantité.">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" value="0">
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div
-                class="formData location-choice">
+                class="formData location-choice"
+                data-error-visible="false"
+                data-error="Choisissez un lieu.">
                 <span class="error location-error"></span>
                 <input
                   class="checkbox-input location-input"
@@ -171,7 +182,9 @@
               </div>
 
               <div
-                class="formData">
+                class="formData"
+                data-error-visible="false"
+                data-error="Vous devez accepté les conditions d'utilisation.">
                 <input class="checkbox-input conditions-input" type="checkbox" id="checkbox1" checked/>
                 <label class="checkbox2-label" for="checkbox1">
                   <span class="checkbox-icon"></span>
