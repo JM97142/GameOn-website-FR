@@ -12,9 +12,8 @@ const form = document.querySelector("#form");
 const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const modalCloseBtn = document.querySelector(".close");
-const endMessage = document.querySelector(".end-message");
-const modalCloseEnd = document.querySelector(".btn-close-end");
-const endModal = document.querySelector("#end-modal");
+const successModal = document.querySelector("#success-modal");
+const successClose = document.querySelector(".btn-success");
 
 
 // Launch modal event
@@ -22,7 +21,7 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
 // Close modals event
 modalCloseBtn.addEventListener('click', closeModal);
-modalCloseEnd.addEventListener('click', closeEndModal);
+modalCloseSuccess.addEventListener('click', closeSuccessModal);
 
 // Functions
 function launchModal() {
@@ -33,10 +32,10 @@ function closeModal() {
   modalbg.style.display = "none";
 }
 
-function lauchEndModal() {
-  endModal.style.display = "block";
+function lauchSuccessModal() {
+  successModal.style.display = "block";
 }
 
-function closeEndModal() {
-  endModal.style.display = "none";
+function closeSuccessModal() {
+  successModal.style.display = "none";
 }

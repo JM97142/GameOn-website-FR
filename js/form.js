@@ -38,7 +38,7 @@ function validate(event) {
         validateConditions()
     ) {
         closeModal();
-        lauchEndModal();
+        lauchSuccessModal();
     } else {
         console.log("error");
     }
