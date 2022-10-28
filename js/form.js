@@ -1,5 +1,4 @@
 // DOM Elements
-const form = document.querySelector("#form");
 const firstNameInput = document.querySelector("#firstname");
 const lastNameInput = document.querySelector("#lastname");
 const emailInput = document.querySelector("#email");
@@ -28,7 +27,21 @@ function validate(event) {
     validateQuantity();
     validateLocation();
     validateConditions();
-    validateNews();
+
+    if (
+        validateFirstName() &&
+        validateLastName() &&
+        validateEmail() &&
+        validateBirthdate() &&
+        validateQuantity() &&
+        validateLocation() &&
+        validateConditions()
+    ) {
+        closeModal();
+        lauchEndModal();
+    } else {
+        console.log("error");
+    }
 }
 
 // Functions form inputs
@@ -102,12 +115,4 @@ function validateConditions() {
     }
     conditionsInput.parentNode.setAttribute("data-error-visible", "true");
     return false;
-}
-
-function validateNews() {
-    if (newsInput.checked == true) {
-        return true;
-    } else {
-        return false;
-    }
 }

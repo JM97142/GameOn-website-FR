@@ -318,7 +318,8 @@ input {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup,
+.btn-close-end {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -525,3 +526,18 @@ footer {
   }
 }
 
+#end-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(26, 39, 156, 0.4);
+}
+
+.end-message {
+  text-align: center;
+}
