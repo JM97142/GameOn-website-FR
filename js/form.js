@@ -39,8 +39,6 @@ function validate(event) {
     ) {
         closeModal();
         lauchSuccessModal();
-    } else {
-        console.log("error");
     }
 }
 
