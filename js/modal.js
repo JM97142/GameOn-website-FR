@@ -12,6 +12,7 @@ const form = document.querySelector("#form");
 const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const modalCloseBtn = document.querySelector(".close");
+const successCloseBtn = document.querySelector(".close-success");
 const successModal = document.querySelector("#success-modal");
 const successClose = document.querySelector(".btn-success");
 
@@ -22,6 +23,7 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // Close modals event
 modalCloseBtn.addEventListener('click', closeModal);
 successClose.addEventListener('click', closeSuccessModal);
+successCloseBtn.addEventListener('click', closeSuccessModal);
 
 // Functions
 function launchModal() {
