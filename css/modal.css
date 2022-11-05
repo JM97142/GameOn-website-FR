@@ -365,7 +365,6 @@ input {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -380,7 +379,7 @@ input {
   color: #fff;
   position: relative;
   text-align: left;
-  /* min-width: 424px; */
+  min-width: 424px;
 }
 .hero-content::after {
   content: "";
@@ -397,7 +396,6 @@ input {
 }
 .hero-headline {
   font-size: 4.5rem;
-  font-weight: normal;
   white-space: nowrap;
 }
 .hero-text {
@@ -512,6 +510,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .hero-content {
+    min-width: 0;
+  }
+  .bground, #success-modal {
+    background-color: transparent;
+  }
   .topnav {
     display: flex;
     justify-content: space-between;
@@ -561,13 +565,13 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 3.5rem;
+    font-size: 2rem;
     white-space: normal;
   }
   .hero-text {
-    margin: 0;
+    margin: 20px 0;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .hero-img img {
     border-radius: 10px;
