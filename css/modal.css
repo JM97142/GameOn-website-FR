@@ -526,6 +526,7 @@ footer {
   .topnav a.icon {
     float: right;
     display: block;
+    color: #ff0000;
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
