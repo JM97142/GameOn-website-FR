@@ -1,6 +1,6 @@
 # Projet GameOn
-Repo forker depuis https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR
-Projet OP4 : Créez une landing page avec Javascript
+- Repo forké depuis https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR
+- Projet OP4 : Créez une landing page avec Javascript
 
 # Missions :
 1. TODO : fermer la modale
